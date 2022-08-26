@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Services</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="">
+    <!-- now add font awesome link for icons on our website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- javascript file link -->
+    <script src="script.js" defer></script>
+    <style>
+        /* now add font family from google fonts   */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+        /*variables  */
+        :root {
+            --main-color: #6280da;
+            --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        /* now add css for all elements on page */
+        * {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all 0.3s ease-in-out;
+        }
+
+        html {
+            font-size: 65%;
+            overflow-x: hidden;
+        }
+
+        /* now add css for global classes that will be used for every element that have a same stylling on entire page */
+        section {
+            padding: 2rem 7%;
+        }
+
+        .btn {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: var(--main-color);
+        }
+
+        header {
+            padding: 1rem 7%;
+            font-size: 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .navbar-container {
+            min-width: 60vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .navbar-links a {
+            margin-left: 2rem;
+            font-size: 1.7rem;
+            color: #000;
+            font-weight: 600;
+        }
+
+        header .navbar-links a:hover {
+            color: var(--main-color);
+        }
+
+        header .btn-div i {
+            padding: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+            color: var(--main-color);
+        }
+
+        header .fa-bar {
+            display: none;
+        }
+
+        /* home section */
+        .home {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .home .content-div {
+            flex: 1 1 40rem;
+        }
+
+        .home .image-div {
+            flex: 1 1 40rem;
+        }
+
+        .home .heading {
+            font-size: 5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+
+        }
+
+        .home .heading .pink-text {
+            color: #d74bb2;
+        }
+
+        .home .heading .orange-text {
+            color: #da3e05;
+        }
+
+        .home .heading .fa-seedling {
+            background: linear-gradient(to right, #da3e05, #d74bb2);
+            border-radius: 50%;
+            font-size: 4rem;
+            padding: 1rem;
+        }
+
+        /* .home .heading .fa-burger{
+            background: linear-gradient(to right,#da3e05,#d74bb2);
+            border-radius: 50%;
+            font-size: 4rem;
+            padding: 1rem;
+        } */
+        .home .heading .fa-location-dot {
+            background: var(--main-color);
+            border-radius: 50%;
+            padding: 1rem;
+            font-size: 3.4rem;
+
+        }
+
+        .home .btn-div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .home .btn-div .video-btn {
+            font-size: 2rem;
+            color: var(--main-color);
+        }
+
+        /* card section starts */
+        .cards-section .cards-div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5;
+            margin-top: 3rem;
+
+        }
+
+        .cards-section .cards-div .card {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: 1.5rem;
+            flex: 1 1 27rem;
+            line-height: 2;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        .cards-section .cards-div .card img {
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+
+        .cards-section .cards-div .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .cards-section .cards-div .card .heading {
+            color: #000;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .cards-section .cards-div .card .text {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cards-section .cards-div .card:nth-child(1) {
+            background-color: #d74bb2;
+
+        }
+
+        .cards-section .cards-div .card:nth-child(2) {
+            background-color: rgb(161, 218, 4);
+            transform: scale(1.1);
+
+        }
+
+        .cards-section .cards-div .card:nth-child(3) {
+            background-color: crimson;
+
+        }
+
+        /* footer */
+
+        .footer{
+            text-align: center;
+            font-size: 3rem;
+            margin: 5px;
+        }
+        .footer i{
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .footer i:nth-child(1){
+            color: blue;
+        }
+        .footer i:nth-child(2){
+            color: rgb(209, 10, 120);
+        }
+        .footer i:nth-child(3){
+            color: rgb(29, 230, 2);
+        }
+        .footer i:nth-child(4){
+            color: rgb(209, 10, 120);
+        }
+        .footer i:hover{
+            transform: translateY(-30%);
+        }
+        /* now lets make it responsive on smaller devices like mobile and tablets etc. */
+        @media (max-width:991px){
+            /* lets reduce the font size on smaller devices */
+            html{
+                font-size: 55%;
+
+            }
+        }
+
+        @media (max-width:768px){
+            /* lets reduce the font size on smaller devices */
+            html{
+                font-size: 50%;
+
+            }
+            /* now make navbar responsive */
+            header .fa-bars{
+                display: black;
+                font-size: 3rem;
+                cursor: pointer;
+                color: #da3e05;
+                position: absolute;
+                top: 3rem;
+                right: 2rem;
+                z-index: 22;
+            }
+            header .navbar-container{
+                display: none;
+                position: absolute;
+                top: 7rem;
+                right: 4rem;
+                background-color: #fff;
+                border: 2ox solid var(--main-color);
+                box-shadow: var(--box-shadow);
+                border-radius: 1rem;
+                padding: 1.5rem;
+                text-align: center;
+                max-width: 10rem;
+            }
+            header .navbar-container .navbar-links a{
+                display: block;
+                line-height: 2.5;
+            }
+            header .navbar-container .btn-div{
+                padding: 1rem;
+            }
+            /* now css  for class below that we will add & remove using javascript */
+            header .active{
+                display: block;
+            }
+            .home{
+                text-align: center;
+
+            }
+            .home .btn-div{
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width:450px){
+            /* lets reduce the font size on smaller devices */
+            html{
+                font-size: 40%;
+                
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <img src="./photos/Dpic3.png" alt="logo" class="logo" style="width: 5rem;">
+        <div class="navbar-container">
+            <div class="navbar-links">
+                <a href="">Find Vegetables</a>
+                <!-- <a href="">Tracking</a> -->
+                <a href="">Find Farm</a>
+                <a href="">Location</a>
+            </div>
+            <div class="btn-div">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <a href="#" class="btn">Contact Us</a>
+            </div>
+        </div>
+        <!-- add Menu Bar Icon -->
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <!-- home section start -->
+    <section class="home">
+        <div class="content-div">
+            <h1 class="heading">
+                <!-- <i class="fa-solid fa-burger"></i> -->
+                <i class="fa-solid fa-seedling"></i>
+                we have <span class="pink-text">Fastest</span> <br>
+                <span class="orange-text">Delivery</span> in your <br>
+                town <i class="fa-solid fa-location-dot"></i>
+            </h1>
+            <div class="btn-div">
+                <a href="#" class="btn">Order Now</a>
+                <a href="#" class="video-btn">
+                    <i class="fa-solid fa-circle-play"></i>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+        <div class="image-div">
+            <img src="./photos/Dpic2.jpg" alt="" style="max-width:50rem">
+        </div>
+    </section>
+
+    <!-- cards section start -->
+    <section class="cards-section">
+        <div class="cards-div">
+            <!-- single card starts -->
+            <div class="card">
+                <img src="./photos/card3.jpg" alt="" style="max-width:15rem">
+                <p class="heading">Fresh And Healthy Vegetables</p>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolores?
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- single card starts -->
+            <!-- single card starts -->
+            <div class="card">
+                <img src="./photos/card1.jpg" alt="" style="max-width:15rem">
+                <p class="heading">Faster Delivery</p>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolores?
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- single card starts -->
+            <!-- single card starts -->
+            <div class="card">
+                <img src="./photos/card2.jpg" alt="" style="max-width:15rem">
+                <p class="heading">Discount Voucher</p>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolores?
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- single card starts -->
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
+
+    </section>
+</body>
+
+</html>

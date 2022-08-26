@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Merriweather:wght@300&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital@1&family=Merriweather:wght@300&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-image: url(./photos/bgimg7.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+            overflow: hidden; */
+        }
+        body{
+            background: chocolate;
+            font-family: 'Josefin Sans', sans-serif;
+
+        }
+        .wrapper{
+            margin-top: 10%;
+        }
+       .wrapper h1{
+        font-family: 'Allura', cursive;
+        font-size: 52px;
+        margin-bottom: 60px;
+        text-align: center;           
+        }
+        .team{
+            display: flex;
+            text-align: center;
+            width: auto;
+            justify-content: center;
+        }
+        .team .team_member{
+            border-radius: 20px;
+            box-shadow: 3px 4px 15px black;
+            background: #fff;
+            margin: 7px;
+            margin-bottom: 50px;
+            width: 300px;
+            padding: 20px;
+            line-height: 20px;
+            color: #8e8b8b;
+            position: relative;
+        }
+        .team .team_member h3{
+            color: #71eb06;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+        .team .team_member p.role{
+            color: rgb(104, 101, 101);
+            font-size: 12px;
+            text-transform:uppercase;
+            margin: 12px 0;
+        }
+        .team .team_member  p{
+            color: rgb(32, 32, 32);
+        }
+       /* .team .team_member .team_img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        } */
+        .team .team_member .team_img img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 7px;
+        }
+
+         /* footer */
+
+         .footer{
+            text-align: center;
+            font-size: 3rem;
+            margin: 5px;
+        }
+        .footer i{
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .footer i:nth-child(1){
+            color: blue;
+        }
+        .footer i:nth-child(2){
+            color: rgb(209, 10, 120);
+        }
+        .footer i:nth-child(3){
+            color: rgb(29, 230, 2);
+        }
+        .footer i:nth-child(4){
+            color: rgb(209, 10, 120);
+        }
+        .footer i:hover{
+            transform: translateY(-30%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Our Team</h1>
+
+    <div class="team">
+        <div class="team_member">
+            <div class="team_img">
+                <img src="./photos/Adarsh.jpg" alt="team_member_image">
+            </div>
+             <h3>Adarsh Pawar</h3>
+             <p class="role">Web Developer</p>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquid ad possimus neque ab, 
+                 sapiente delectus eos alias nam tempore eveniet illo quae doloremque placeat recusandae voluptatibus quod.
+                  Eius, at?</p>
+        </div>
+        <div class="team_member">
+            <div class="team_img">
+                <img src="./photos/jenny.jpg" alt="team_member_image">
+            </div>
+            <h3>Jenny Deo</h3>
+             <p class="role">Tester</p>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquid ad possimus neque ab, 
+                 sapiente delectus eos alias nam tempore eveniet illo quae doloremque placeat recusandae voluptatibus quod.
+                  Eius, at?</p>
+        </div>
+        <div class="team_member">
+            <div class="team_img">
+                <img src="./photos/sakharam.jpg" alt="team_member_image">
+            </div>
+            <h3>Sakharam Patil</h3>
+             <p class="role">Support Lead</p>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquid ad possimus neque ab, 
+                 sapiente delectus eos alias nam tempore eveniet illo quae doloremque placeat recusandae voluptatibus quod.
+                  Eius, at?</p>
+        </div>
+    </div>
+</div>
+
+ <!-- footer section -->
+<section class="footer">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-solid fa-envelope"></i>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(./photos/bgimg8.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+        }
+
+        body {
+            line-height: 1.5;
+            font-family: sans-serif;
+            /* background-color: coral; */
+            height: 44vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .marquee {
+            width: 80vw;
+            height: 40vh;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgb(10, 6, 7);
+            overflow: hidden;
+            border-radius: 20px;
+            border-style: groove;
+            border: hidden
+        }
+
+        .marquee-content {
+            list-style: none;
+            height: 100%;
+            display: flex;
+            animation: scrolling 15s linear infinite;
+
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translateX(80vw);
+            }
+
+            100% {
+                transform: translateX(-180vw);
+            }
+        }
+
+
+        .marquee-content li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 3px solid tan; */
+            width: 20vw;
+            flex-shrink: 0;
+            font-size: 5rem;
+            white-space: nowrap;
+        }
+
+        .marquee-content li img {
+            border-radius: 20px;
+            box-shadow: 2px 2px 28px black;
+        }
+
+        .head {
+            font-family: 'Lobster', cursive;
+            font-size: 29px;
+            color: rgb(63, 62, 62);
+        }
+
+        .container1 {
+            position: relative;
+            margin-top: 221%;
+            /* height: 150px; */
+        }
+
+        .container {
+            max-width: 1170px;
+            background-color: rgb(10, 9, 9);
+            margin: auto;
+            /* top: 500px; */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+
+            background-color: #24262b;
+            padding: 70px 0;
+
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+            /* background-color: red; */
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #d80e3a;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            ;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 100;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-right: 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: rgb(112, 5, 58);
+            font-family: cursive;
+            /* margin: 5px; */
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* responsive */
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <marquee behavior="scroll" direction="right">heloo World</marquee> -->
+    <!-- <h1>Our Fresh Farming Products</h1> -->
+    <div class="head">Our Fresh Farming Products</div>
+    <div class="marquee">
+        <ul class="marquee-content">
+            <h1>Carrot:</h1>
+            <li><img src="./photos/carrots.jpg" width="200" height="200" alt=""></li>
+            <h1>Potato:</h1>
+            <li><img src="./photos/potato2.jpg" width="200" height="200" alt=""></li>
+            <h1>Corn:</h1>
+            <li><img src="./photos/corn.jpg" width="200" height="200" alt=""></li>
+            <h1>Brinjal:</h1>
+            <li><img src="./photos/brinjal.jpg" width="200" height="200" alt=""></li>
+            <h1>Coriander:</h1>
+            <li><img src="./photos/Coriander.jpg" width="200" height="200" alt=""></li>
+            <h1>Cucumber:</h1>
+            <li><img src="./photos/cucumber.jpg" width="200" height="200" alt=""></li>
+            <h1>Ladifinger:</h1>
+            <li><img src="./photos/ladifinger.jpg" width="200" height="200" alt=""></li>
+            <h1>Bittermelon:</h1>
+            <li><img src="./photos/bitterMelon.jpg" width="200" height="200" alt=""></li>
+            <h1>Onion:</h1>
+            <li><img src="./photos/onion.jpg" width="200" height="200" alt=""></li>
+            <h1>Tomato:</h1>
+            <li><img src="./photos/tomato.jpg" width="200" height="200" alt=""></li>
+        </ul>
+    </div>
+    <!-- <div class="container1">
+   <footer class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col">
+                   <h4>Company</h4>
+                   <ul>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Our Services</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li><a href="#"></a>Affiliate Program</li>
+                   </ul>
+               </div>
+
+               <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">Green Vegetables</a></li>
+                    <li><a href="#">Fruits</a></li>
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#"> Fruit juices</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+           </div>
+       </div>
+
+   </footer>
+</div> -->
+
+
+
+</body>
+
+</html>

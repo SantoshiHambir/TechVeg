@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Shadows+Into+Light&family=Yellowtail&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* background-image: url(./bgimg8.jpg); */
+            background-color: darkorange;
+            -webkit-background-size:cover;
+            background-repeat: no-repeat;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            /* z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px); */
+            /* filter: contrast(15px); */
+            /* filter:drop-shadow(15px); */
+            /* filter: blur(20px); */
+            /* overflow: hidden; */
+            /* background: rgba(240,227,227,0.5); */
+            /* backdrop-filter: blur(30px); */
+           
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        form{
+            box-shadow:  3px 3px 88px black;
+            font-family: 'Yellowtail', cursive;
+            border: 5px solid black;
+            border-radius: 70px;
+            border-style:hidden;
+            text-shadow: 3px 3px 18px black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            margin: 87px;
+           
+        }
+        th{
+            background-color: lawngreen;
+          
+        }
+        td img{
+            border: 5px solid black;
+            border-radius: 25px;
+            border-style:double;
+            margin: 2px;
+          
+        }
+        td{
+            /* font-size: 30px; */
+            color: rgb(48, 47, 47);
+            font-weight: bold;
+            font-family: 'Yellowtail', cursive;
+         
+           
+        }
+        input{
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Yellowtail', cursive;
+        }
+        
+ 
+      
+    </style>
+</head>
+<body>
+    <h1><i>Vegetables Order Form</i></h1>
+   <form name="Order">
+       <b> customer Name:</b><input type="text" size="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <b> Phone Number:</b><input type="text" size="20"> <br><br><br>
+       <table align="center">
+           <tr>
+               <th>Items</th>
+               <th>Select items</th>
+               <th>Quantity</th>
+               <th>Unit Price</th>
+               <th>Total Price</th>
+           </tr>
+
+           <tr>
+              <td><img src="./photos/onion.jpg" width="150" height="150" alt=""></td>
+              <td><input type="checkbox" value="Onion">Onion</td>
+              <td><input type="text" size="15"></td>
+              <td><input type="text" value="20.00/kg" size="15" readonly></td>
+              <td><input type="text" size="10" disabled></td>
+           </tr>
+
+           <tr>
+            <td><img src="./photos/potato2.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Potato</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="30.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/cucumber.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Cucumber</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="30.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/corn.jpg"width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Corn</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="50.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/ladifinger.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Ladifinger</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="60.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/tomato.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Tomato</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="80.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/bitterMelon.jpg"width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">BitterMelon</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="40.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/brinjal.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Brinjal</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="40.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/Coriander.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Coriander</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="15.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+            <td><img src="./photos/carrots.jpg" width="150" height="150" alt=""></td>
+            <td><input type="checkbox" value="Onion">Carrots</td>
+            <td><input type="text" size="15"></td>
+            <td><input type="text" value="30.00/kg" size="15" readonly></td>
+            <td><input type="text" size="10" disabled></td>
+         </tr>
+
+         <tr>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>Total</td>
+             <td><input type="text" size="10" disabled></td>
+         </tr>
+         
+         <tr>
+             <td colspan="2"><input type="submit" value="Calculate Order Total"></td>
+             <td colspan="2"><input type="submit" value="Reset Order"></td>
+         </tr>
+
+       </table>
+    </form>
+
+</body>
+</html>
